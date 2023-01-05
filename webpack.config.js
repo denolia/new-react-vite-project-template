@@ -103,15 +103,14 @@ module.exports = (_, argv) => {
 function checkEnvironmentVariables() {
   dotenv.config();
 
+  // eslint-disable-next-line prefer-destructuring
   const ENVIRONMENT = process.env.ENVIRONMENT;
 
   const missingOtherEnvVariables = Object.entries({
     ENVIRONMENT,
   }).filter(([, value]) => !value);
   if (missingOtherEnvVariables.length) {
-    const names = missingOtherEnvVariables
-      .map(([name]) => `    ${name}`)
-      .join("\n");
+    const names = missingOtherEnvVariables.map(([name]) => `    ${name}`).join("\n");
     console.warn(`Missing optional environment variables: \n${names}`);
   }
 }
