@@ -11,7 +11,15 @@ module.exports = {
     },
     ecmaVersion: "latest",
     sourceType: "module",
+    project: "./tsconfig.json",
   },
   plugins: ["react", "@typescript-eslint"],
-  rules: {},
+  rules: {
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        extensions: [".js", ".jsx", ".tsx", ".ts"],
+      },
+    ],
+  },
 };
