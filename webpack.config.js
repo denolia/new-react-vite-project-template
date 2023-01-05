@@ -87,7 +87,7 @@ module.exports = (_, argv) => {
     config.mode = "development";
     config.devtool = "eval-source-map";
     config.devServer = {
-      port: 8080,
+      port: process.env.PORT || 8080,
       historyApiFallback: true,
       server: "http",
       hot: true,
