@@ -40,5 +40,6 @@ module.exports = {
       },
     ],
     "import/prefer-default-export": "off",
+    "@typescript-eslint/consistent-type-imports": "warn",
   },
 };
