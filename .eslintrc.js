@@ -14,6 +14,17 @@ module.exports = {
     project: "./tsconfig.json",
   },
   plugins: ["react", "@typescript-eslint"],
+  overrides: [
+    {
+      files: ["**/*.test.ts", "**/*.test.tsx"],
+      env: {
+        jest: true,
+      },
+      extends: ["plugin:jest/recommended"],
+      plugins: ["jest"],
+      rules: {},
+    },
+  ],
   settings: {
     "import/resolver": {
       typescript: {
@@ -28,5 +39,6 @@ module.exports = {
         extensions: [".js", ".jsx", ".tsx", ".ts"],
       },
     ],
+    "import/prefer-default-export": "off",
   },
 };

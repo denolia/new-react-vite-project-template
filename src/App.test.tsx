@@ -1,3 +1,4 @@
+/* eslint-disable jest/expect-expect */
 import { App } from "@app/App";
 import React from "react";
 import { createRoot } from "react-dom/client";
