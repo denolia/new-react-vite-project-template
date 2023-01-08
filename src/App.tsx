@@ -1,6 +1,6 @@
 import React from "react";
 
-import type { Foo } from "@app/Foo"; // testing consistent type imports
+import type { Foo } from "./Foo"; // testing consistent type imports
 
 export function App() {
   const foo: Foo = "asdf";
