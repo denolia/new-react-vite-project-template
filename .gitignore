@@ -24,3 +24,5 @@ yarn-error.log*
 /nocommit
 
 /.idea
+
+stats.json
