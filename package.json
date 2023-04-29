@@ -1,6 +1,6 @@
 {
-  "name": "new-project-template",
-  "version": "0.0.0",
+  "name": "new-react-vite-project-template",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "vite",
